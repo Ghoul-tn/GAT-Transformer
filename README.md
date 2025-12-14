@@ -48,12 +48,12 @@ Navigate to the `data download and preprocessing/` folder to run these steps.
 
 Navigate to the `model/` folder to run these steps.
 
-1.  **`01_gat_transformer_main.ipynb`**: The core training script. It includes:
+1.  **`GAT-Transformer.ipynb`**: The core training script. It includes:
     * Offline data imputation logic.
     * Definition of the `SpiPredictorGATTransformer` architecture.
     * Training loop with early stopping.
-2.  **`02_benchmarks.ipynb`**: Comparative experiments running baseline models (LSTM, GRU, Dense, pure Transformer) on benchmark datasets (DC Weather, Ukraine NDVI, Household Power).
-3.  **`03_generalization_analysis.ipynb`**: Inference script. It loads the pre-trained model weights and performs predictions on unseen test regions to generate the spatial analysis maps and scatter plots found in the paper.
+2.  **`forecasting-benchmarks.ipynb`**: Comparative experiments running baseline models (LSTM, GRU, Dense, pure Transformer) on benchmark datasets (DC Weather, Ukraine NDVI, Household Power).
+3.  **`Generalization and pixel level analysis.ipynb`**: Inference script. It loads the pre-trained model weights and performs predictions on unseen test regions to generate the spatial analysis maps and scatter plots found in the paper.
 
 ### Data Sources
 
