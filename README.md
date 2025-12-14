@@ -35,14 +35,14 @@ The repository is organized into two primary components to separate the data pip
 
 ### A. Data Download, Preprocessing & Time Series Creation
 
-Navigate to the `data_download_preprocessing/` folder to run these steps.
+Navigate to the `data download and preprocessing/` folder to run these steps.
 
-1.  **`01_download_spi_chirps.ipynb`**: Calculates and downloads the Standardized Precipitation Index (SPI) using CHIRPS Daily precipitation data.
-2.  **`02_download_ndvi.ipynb`**: Downloads monthly Normalized Difference Vegetation Index (NDVI) data from MODIS Terra (MOD13A3).
-3.  **`03_download_lst.ipynb`**: Downloads Land Surface Temperature (LST) data from MODIS Terra (MOD11A1).
-4.  **`04_download_soil_moisture.ipynb`**: Downloads monthly Soil Moisture data from NASA GLDAS.
-5.  **`05_mask_soil_moisture.ipynb`**: Applies country-specific shapefile masks to clean and clip the downloaded raster data.
-6.  **`06_time_series_creation.ipynb`**: The integration step. It aligns all spatial rasters temporally, handles missing values, and stacks them into final `.npz` files (multivariate time series arrays) ready for training.
+1.  **`download_spi_chirps.ipynb`**: Calculates and downloads the Standardized Precipitation Index (SPI) using CHIRPS Daily precipitation data.
+2.  **`download_ndvi.ipynb`**: Downloads monthly Normalized Difference Vegetation Index (NDVI) data from MODIS Terra (MOD13A3).
+3.  **`download_lst.ipynb`**: Downloads Land Surface Temperature (LST) data from MODIS Terra (MOD11A1).
+4.  **`download_soil_moisture.ipynb`**: Downloads monthly Soil Moisture data from NASA GLDAS.
+5.  **`mask_soil_moisture.ipynb`**: Applies country-specific shapefile masks to clean and clip the downloaded raster data.
+6.  **`time_series_creation.ipynb`**: The integration step. It aligns all spatial rasters temporally, handles missing values, and stacks them into final `.npz` files (multivariate time series arrays) ready for training.
 
 ### B. Model Training and Prediction
 
