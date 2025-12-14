@@ -1,6 +1,6 @@
 [![License: MIT](https://badgen.net/badge/MIT/blue)](https://choosealicense.com/licenses/mit/)
 
-# GAT-Transformer: Multivariate Time Series Forecasting for Drought Monitoring
+# Graph Attention-Transformer for multivariate time series forecasting: application to drought
 
 ## How to cite?
 This manuscript has been submitted to **Computers & Geosciences**. If you use this code or data, please cite it as follows once published:
