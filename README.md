@@ -1,5 +1,3 @@
-[![License: MIT](https://badgen.net/badge/MIT/blue)](https://choosealicense.com/licenses/mit/)
-
 # Graph Attention-Transformer for multivariate time series forecasting: application to drought
 
 ## How to cite?
