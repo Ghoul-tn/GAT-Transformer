@@ -30,7 +30,7 @@ The complete list of required packages is listed in the `requirements.txt` file.
 
 The repository is organized into two primary components to separate the data pipeline from the modeling phase:
 
-- [X] **(A) `data_download_preprocessing`**: Contains scripts for downloading raw satellite imagery from Google Earth Engine, masking geospatial data, and generating aligned multivariate time series arrays.
+- [X] **(A) `data download and preprocessing`**: Contains scripts for downloading raw satellite imagery from Google Earth Engine, masking geospatial data, and generating aligned multivariate time series arrays.
 - [X] **(B) `model`**: Contains the PyTorch implementation of the GAT-Transformer, training loops, benchmark comparisons, and inference scripts for generalization analysis.
 
 ### A. Data Download, Preprocessing & Time Series Creation
