@@ -1,10 +1,10 @@
 # Graph Attention-Transformer for multivariate time series forecasting: application to drought
 
-
-
 ## Summary
 
 The aim of this project is to propose a **Graph Attention-Transformer (GAT-Transformer)** architecture for multivariate time series forecasting, specifically applied to drought monitoring in West Africa.
+
+![GAT-Transformer Architecture](architecture.jpg)
 
 - [X] **Hybrid Architecture:** Synergistically combines Graph Attention Networks (GAT) to model dynamic short-range dependencies and Transformer Encoders to capture long-range global patterns.
 - [X] **Regional Application:** Validated on the forecasting of the Standardized Precipitation Index (SPI) in West Africa using satellite-derived environmental data (NDVI, LST, Soil Moisture).
@@ -76,4 +76,4 @@ The repository includes scripts to visualize pixel-level forecasts vs. actuals, 
 ## How to cite?
 This manuscript has been submitted to **Computers & Geosciences**. If you use this code or data, please cite it as follows once published:
 
-> Ayed, A.,Balti, H. , & Ben Abbes, A. (Under Review). Graph Attention-Transformer for multivariate time series forecasting: application to drought. *Computers & Geosciences*.
+> Ayed, A., Balti, H., & Ben Abbes, A. (Under Review). Graph Attention-Transformer for multivariate time series forecasting: application to drought. *Computers & Geosciences*.
