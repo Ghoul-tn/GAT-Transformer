@@ -1,9 +1,6 @@
 # Graph Attention-Transformer for multivariate time series forecasting: application to drought
 
-## How to cite?
-This manuscript has been submitted to **Computers & Geosciences**. If you use this code or data, please cite it as follows once published:
 
-> Ayed, A., Ben Abbes, A., & Balti, H. (Under Review). Graph Attention-Transformer for multivariate time series forecasting: application to drought. *Computers & Geosciences*.
 
 ## Summary
 
@@ -75,3 +72,8 @@ The model demonstrated robust generalization capabilities when applied to neighb
 
 **Pixel-Level Analysis**
 The repository includes scripts to visualize pixel-level forecasts vs. actuals, demonstrating the model's ability to track seasonal drought cycles effectively across the different study regions.
+
+## How to cite?
+This manuscript has been submitted to **Computers & Geosciences**. If you use this code or data, please cite it as follows once published:
+
+> Ayed, A.,Balti, H. , & Ben Abbes, A. (Under Review). Graph Attention-Transformer for multivariate time series forecasting: application to drought. *Computers & Geosciences*.
