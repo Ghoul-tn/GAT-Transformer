@@ -23,33 +23,34 @@ The complete list of required packages is listed in the `requirements.txt` file.
 
 ## Workflow
 
-The repository is organized into three primary components to separate the data pipeline, the raw data, and the modeling phase:
+The repository is organized into three primary components to separate the data pipeline, sample data, and the modeling phase:
 
 - [X] **(A) `data download and preprocessing`**: Scripts for downloading raw satellite imagery from Google Earth Engine and generating aligned multivariate time series arrays.
-- [X] **(B) `data`**: Contains ready-to-use, pre-imputed `.npz` files for specific study regions.
+- [X] **(B) `data`**: Contains a ready-to-use, pre-imputed `.npz` file for The Gambia.
 - [X] **(C) `model`**: PyTorch implementation of the GAT-Transformer, training loops, benchmarks, and inference scripts.
 
 ### A. Data Download, Preprocessing & Time Series Creation
-*Note: This step is optional if you use the pre-imputed files in the `/data` folder.*
+*Note: This step is required if you wish to generate datasets for other countries (e.g., Senegal, Guinea, or Guinea-Bissau) as their processed files exceed GitHub's 25MB limit.*
 
 1.  **`download_spi_chirps.ipynb`**: Calculates and downloads the SPI using CHIRPS Daily precipitation data.
-2.  **`download_ndvi.ipynb`**: Downloads monthly NDVI data from MODIS Terra (MOD13A3).
-3.  **`download_lst.ipynb`**: Downloads LST data from MODIS Terra (MOD11A1).
+2.  **`download_ndvi.ipynb`**: Downloads monthly NDVI data from MODIS Terra.
+3.  **`download_lst.ipynb`**: Downloads LST data from MODIS Terra.
 4.  **`download_soil_moisture.ipynb`**: Downloads monthly Soil Moisture data from NASA GLDAS.
 5.  **`mask_soil_moisture.ipynb`**: Applies country-specific shapefile masks to clean and clip the data.
 6.  **`time_series_creation.ipynb`**: Aligns spatial rasters, handles missing values, and stacks them into final `.npz` files.
 
 ### B. Ready-to-use Data
-The `/data` folder provides pre-processed multivariate time series arrays for immediate experimentation:
+The `/data` folder provides a sample multivariate time series array to test the model architecture immediately:
 * **`Gambia_data.npz`**: Pre-imputed time series data for The Gambia.
+* **Note on other regions**: While the study covers Guinea-Bissau, Senegal, and Guinea, their pre-imputed data files exceed the 25MB limit and are not included in this repository. Users can generate these files using the scripts in Section A.
 
 ### C. Model Training and Prediction
 
 Navigate to the `model/` folder to run these steps:
 
-1.  **`GAT-Transformer.ipynb`**: The core training script including the `SpiPredictorGATTransformer` architecture and training loops.
+1.  **`GAT-Transformer.ipynb`**: The core training script. You can use `Gambia_data.npz` here to verify the `SpiPredictorGATTransformer` architecture.
 2.  **`forecasting-benchmarks.ipynb`**: Comparative experiments running baseline models (LSTM, GRU, Dense, pure Transformer).
-3.  **`Generalization and pixel level analysis.ipynb`**: Inference script for performing predictions on unseen test regions and generating spatial analysis maps.
+3.  **`Generalization and pixel level analysis.ipynb`**: Inference script for performing predictions on unseen test regions.
 
 ### Data Sources
 
