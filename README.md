@@ -42,7 +42,6 @@ The repository is organized into three primary components to separate the data p
 ### B. Ready-to-use Data
 The `/data` folder provides pre-processed multivariate time series arrays for immediate experimentation:
 * **`Gambia_data.npz`**: Pre-imputed time series data for The Gambia.
-* **`Guinea_Bissau_data.npz`**: Pre-imputed time series data for Guinea-Bissau.
 
 ### C. Model Training and Prediction
 
